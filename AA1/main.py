@@ -10,9 +10,8 @@ detector = HandDetector(detectionCon=0.8)
 while True:
 
     try:
-        readVideo = cap.read()
-        check = readVideo[0]
-        cameraFeedImg= readVideo[1]
+        check, cameraFeedImg = cap.read()
+        
 
         cameraFeedImg = cv2.flip(cameraFeedImg, 1)
 
