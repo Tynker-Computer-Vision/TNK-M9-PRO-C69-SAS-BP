@@ -1,8 +1,8 @@
-Detect Hand and Fingers
+Detect Hands
 =======================
 
 
-In this activity, you will learn to detect the hand and the fingers shown in the video feed .
+In this activity, you will learn to detect the hands shown in the video feed using:
 
 
 
@@ -24,7 +24,7 @@ Follow the given steps to complete this activity:
     `from cvzone.HandTrackingModule import HandDetector`
 
 
-* Creating object to detect hand.
+* Creating an object to detect the hand.
 
 
 * Set the `detectionCon` threshold to `0.8`.
@@ -35,16 +35,16 @@ Follow the given steps to complete this activity:
 
 
 
-2. Detect hand in cameraFeedImg.
+2. Detect a hand in cameraFeedImg
 
 
-* Use `detector.findHands()` method and pass `cameraFeedImg` set `flipType` to `False` as parameters.
+* Use the `detector.findHands()` method and pass `cameraFeedImg` set `flipType` to `False` as parameters.
 
 
     `handsDetector = detector.findHands(cameraFeedImg, flipType=False)`
 
 
-* Get the first and second detected frame and store in variable `hands` and `cameraFeedImg`.
+* Get the first and second detected frames and store them in variable `hands` and `cameraFeedImg`.
 
 
     `hands = handsDetector[0]`
@@ -56,7 +56,7 @@ Follow the given steps to complete this activity:
 3. Detect the hand
 
 
-* Check if the first frame is detected using `if` condition.
+* Check if the first frame is detected using the `if` condition.
 
 
     `if hands:`

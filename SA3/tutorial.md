@@ -1,13 +1,12 @@
 Identify the Fingers
 =======================
 
-
 In this activity, you will learn to Identify the fingers in the video.
 
 
-
-
 <img src= "https://media.slid.es/uploads/1525749/images/10509613/ezgif.com-optimize.gif" width = "480" height = "320">
+
+
 
 
 
@@ -19,7 +18,7 @@ Follow the given steps to complete this activity:
 * Open file main.py.
 
 
-* Create a variable currentFingerUp and set empty string to it.
+* Create a variable currentFingerUp and set an empty string to it.
 
 
     `currentFingerUp = ""`
@@ -63,7 +62,7 @@ Follow the given steps to complete this activity:
                 `currentFingerUp = ""`
 
 
-* Use putText() to write the name of the finger on the screen
+* Use putText() to write the name of the finger on the screen.
      
         `cv2.putText(cameraFeedImg, handType1 + " : " + currentFingerUp , (75, 90),`
                         cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)`
@@ -76,3 +75,4 @@ Follow the given steps to complete this activity:
     `cv2.waitKey(1)`
    
 * Save and run the code to check the output.
+

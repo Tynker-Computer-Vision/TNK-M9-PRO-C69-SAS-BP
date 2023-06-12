@@ -25,7 +25,7 @@ Follow the given steps to complete this activity:
   `import cv2`
 
 
-* Capture the camera feed using `cv2.VideoCapture(0)` and set the resolution using `cap.set()` function.
+* Capture the camera feed using `cv2.VideoCapture(0)` and set the resolution of the width and height of the video using `cap.set()` function.
 
 
   `cap = cv2.VideoCapture(0)`
@@ -56,20 +56,10 @@ Follow the given steps to complete this activity:
         `print(e)`
 
 
-* Read the video using `cap.read()` method.
+* Get the single capture from camera using `cap.read()` method and store in the variable `check, cameraFeedImg`.
 
 
-  `readVideo = cap.read()`
-
-
-* Get the first frame of the video by `readVideo[0]`.
-  `check = readVideo[0]`
-
-
-* Get the camera feed by getting the second frmae by `readVideo[1]` and store in variav.
-
-
-  `cameraFeedImg= readVideo[1]`
+  ` check, cameraFeedImg = cap.read()`
 
 
 * Flip the camera by using `cv2.flip()` and pass the cameraFeedImg to it.
